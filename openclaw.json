@@ -384,6 +384,12 @@
       "extraDirs": [
         "d:\\Jim\\openclawd\\skills"
       ]
+    },
+    "entries": {
+      "tavily": {
+        "enabled": true,
+        "apiKey": "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"
+      }
     }
   },
   "plugins": {
