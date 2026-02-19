@@ -1,0 +1,396 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.2-3",
+    "lastTouchedAt": "2026-02-14T06:43:03.752Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-13T10:45:43.165Z",
+    "lastRunVersion": "2026.2.2-3",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "models": {
+    "providers": {
+      "n1n": {
+        "baseUrl": "https://api.n1n.ai/v1",
+        "apiKey": "YOUR_API_KEY_HERE",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "claude-3-5-sonnet-20241022",
+            "name": "Claude 3.5 Sonnet (n1n)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-r1",
+            "name": "DeepSeek R1 (n1n)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 64000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "deepseek": {
+        "baseUrl": "https://api.deepseek.com/v1",
+        "apiKey": "YOUR_API_KEY_HERE",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "deepseek-chat",
+            "name": "DeepSeek Chat",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          }
+        ]
+      },
+      "zhipu": {
+        "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+        "apiKey": "YOUR_API_KEY_HERE",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 65536,
+            "maxTokens": 4096,
+            "compat": {
+              "supportsDeveloperRole": false
+            }
+          }
+        ]
+      },
+      "siliconflow": {
+        "baseUrl": "https://api.siliconflow.cn/v1",
+        "apiKey": "YOUR_API_KEY_HERE",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "Pro/moonshotai/Kimi-K2.5",
+            "name": "Kimi K2.5 (SiliconFlow)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 4096,
+            "compat": {
+              "supportsDeveloperRole": false
+            }
+          },
+          {
+            "id": "Pro/zai-org/GLM-5",
+            "name": "GLM-5 Pro (SiliconFlow)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 65536,
+            "maxTokens": 4096
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-V3",
+            "name": "DeepSeek-V3 (SiliconFlow)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 2,
+              "output": 8,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 65536,
+            "maxTokens": 4096
+          },
+          {
+            "id": "Qwen/Qwen2-VL-72B-Instruct",
+            "name": "Qwen2-VL-72B (SiliconFlow)",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 32768,
+            "maxTokens": 4096
+          },
+          {
+            "id": "deepseek-ai/DeepSeek-R1",
+            "name": "DeepSeek-R1 (SiliconFlow)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 1,
+              "output": 4,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 65536,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek-ai/deepseek-vl2",
+            "name": "DeepSeek-VL2 (SiliconFlow)",
+            "reasoning": false,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 4096,
+            "maxTokens": 4096
+          }
+        ]
+      },
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "YOUR_API_KEY_HERE",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "anthropic/claude-3.5-sonnet",
+            "name": "Claude 3.5 Sonnet",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "deepseek/deepseek-chat",
+            "name": "DeepSeek Chat (via OpenRouter)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 200000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "stepfun/step-3.5-flash:free",
+            "name": "StepFun Step 3.5 Flash (Free)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          },
+          {
+            "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+            "name": "NVIDIA Nemotron Nano 12B (Free)",
+            "reasoning": false,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 128000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "siliconflow/Pro/moonshotai/Kimi-K2.5",
+        "fallbacks": [
+          "siliconflow/deepseek-ai/DeepSeek-V3",
+          "siliconflow/Pro/zai-org/GLM-5",
+          "zhipu/glm-5",
+          "n1n/claude-3-5-sonnet-20241022",
+          "openrouter/deepseek/deepseek-chat",
+          "openrouter/stepfun/step-3.5-flash:free",
+          "openrouter/nvidia/nemotron-nano-12b-v2-vl:free"
+        ]
+      },
+      "imageModel": {
+        "primary": "siliconflow/deepseek-ai/deepseek-vl2"
+      },
+      "memorySearch": {
+        "enabled": false,
+        "provider": "local",
+        "store": {
+          "driver": "sqlite",
+          "path": "~/.openclaw/memory/{agentId}.sqlite"
+        }
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": {
+      "$include": [
+        "./config/agents/main.json",
+        "./config/agents/coder.json"
+      ]
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "feishu",
+        "accountId": "main"
+      }
+    },
+    {
+      "agentId": "coder",
+      "match": {
+        "channel": "feishu",
+        "accountId": "coder"
+      }
+    }
+  ],
+  "channels": {
+    "feishu": {
+      "domain": "feishu",
+      "dmPolicy": "open",
+      "groupPolicy": "open",
+      "historyLimit": 20,
+      "streaming": false,
+      "enabled": true,
+      "allowFrom": [
+        "*"
+      ],
+      "accounts": {
+        "main": {
+          "appId": "cli_a9f35ca688799cd4",
+          "appSecret": "YOUR_API_KEY_HERE",
+          "botName": "Main Agent Bot",
+          "enabled": true
+        },
+        "coder": {
+          "appId": "cli_your_second_app_id",
+          "appSecret": "YOUR_API_KEY_HERE",
+          "botName": "Coder Agent Bot",
+          "enabled": true
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 59999,
+    "mode": "local",
+    "controlUi": {
+      "allowInsecureAuth": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "YOUR_API_KEY_HERE"
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "d:\\Jim\\openclawd\\skills"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "feishu": {
+        "enabled": true
+      }
+    }
+  }
+}
